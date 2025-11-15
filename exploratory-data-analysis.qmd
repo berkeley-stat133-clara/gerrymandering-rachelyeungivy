@@ -5,7 +5,7 @@ format: typst
 
 ### Question 1
 
-Put your question here.
+Were there any counties that had very close call for the total amount of votes?
 
 ### Answer 1
 
@@ -13,7 +13,7 @@ Put your answer here.
 
 ### Question 2
 
-Put your question here.
+Did any counties that were swing counties change parties?
 
 ### Answer 2
 
@@ -21,7 +21,7 @@ Put your answer here.
 
 ### Question 3
 
-Put your question here.
+Which counties had the most drast change?
 
 ### Answer 3
 
