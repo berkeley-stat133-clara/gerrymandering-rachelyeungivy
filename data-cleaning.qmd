@@ -3,3 +3,10 @@ title: Data Cleaning
 format: typst
 ---
 
+library(tidyverse)
+
+raw.data <- read_csv("data/g24_sov_by_g24_svprec.csv")
+raw.data
+
+clean.data <- raw.data |> drop_na()
+clean.data
