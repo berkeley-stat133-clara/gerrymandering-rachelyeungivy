@@ -4,8 +4,16 @@ format: typst
 ---
 
 ### 2024 Election Results and the 2024 District Map
+library(tidyverse)
+df_test <- read_csv("data/cleaned_precincts.csv", show_col_types = FALSE)
+names(df_test)
 
+df <- read_csv("data/cleaned_precincts.csv", show_col_types = FALSE) |>
+  select(CDDIST, DEMVOTE, REPVOTE) |> 
+  mutate(total = DEMVOTE + REPVOTE, dem_share = DEMVOTE / total)
 
+mean_median_score <- mean(df$dem_share, na.rm = TRUE) - median(df$dem_share, na.rm = TRUE)
+mean_median_score
 
 ### 2024 Election Results and the proposed 2025 District Map
 
